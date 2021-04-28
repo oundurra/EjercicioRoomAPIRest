@@ -35,9 +35,6 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    
-    //Anko
-    implementation 'org.jetbrains.anko:anko-common:0.9'
 
     //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'

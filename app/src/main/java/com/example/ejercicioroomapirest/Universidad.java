@@ -1,16 +1,18 @@
 package com.example.ejercicioroomapirest;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 public class Universidad {
-    private String country;
-    private List<String> domains;
-    private List<String> web_pages;
-    private String alpha_two_code;
-    private String name;
-    private String state_province;
+    @SerializedName("country") private String country;
+    @SerializedName("domains") private String[] domains;
+    @SerializedName("web_pages") private String[] web_pages;
+    @SerializedName("alpha_two_code") private String alpha_two_code;
+    @SerializedName("name") private String name;
+    @SerializedName("state-provice") private String state_province;
 
-    public Universidad(String country, List<String> domains, List<String> web_pages, String alpha_two_code, String name, String state_province) {
+    public Universidad(String country, String[] domains, String[] web_pages, String alpha_two_code, String name, String state_province) {
         this.country = country;
         this.domains = domains;
         this.web_pages = web_pages;
@@ -27,19 +29,19 @@ public class Universidad {
         this.country = country;
     }
 
-    public List<String> getDomains() {
+    public String[] getDomains() {
         return domains;
     }
 
-    public void setDomains(List<String> domains) {
+    public void setDomains(String[] domains) {
         this.domains = domains;
     }
 
-    public List<String> getWeb_pages() {
+    public String[] getWeb_pages() {
         return web_pages;
     }
 
-    public void setWeb_pages(List<String> web_pages) {
+    public void setWeb_pages(String[] web_pages) {
         this.web_pages = web_pages;
     }
 
